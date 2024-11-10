@@ -1,0 +1,36 @@
+﻿@model Project02_MovieWebsite.Models.Movies
+
+@{
+    ViewBag.Title = $"Delete {Model.Title}";
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+}
+
+<h2>@ViewBag.Title</h2>
+
+<form action="/Movies/Delete/@Model.MovieID" method="post">
+    <input type="hidden" name="MovieID" value="@Model.MovieID" />
+    <table class="table table-bordered table-hover">
+        <tr>
+            <th>Title</th>
+            <td>@Model.Title</td>
+        </tr>
+        <tr>
+            <th>Genre</th>
+            <td>@Model.Genres.Name</td>
+        </tr>
+        <tr>
+            <th>Release Year</th>
+            <td>@Model.ReleaseYear.Value.ToString("dd/MM/yyyy")</td>
+        </tr>
+        <tr>
+            <th>Duration</th>
+            <td>@Model.Duration</td>
+        </tr>
+        <tr>
+            <th>Rating</th>
+            <td>@Model.Rating</td>
+        </tr>
+    </table>
+    <a href="/Movies/Index" class="btn btn-outline-info">Cancel</a>
+    <button type="submit" class="btn btn-outline-danger">Delete</button>
+</form>

@@ -1,0 +1,30 @@
+﻿
+
+@model List<Project02_MovieWebsite.Models.Genres>
+
+@{
+    ViewBag.Title = "Trang thể loại";
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+}
+
+<h2>@ViewBag.Title</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create" ,null,new {@class = "btn btn-outline-dark"})
+</p>
+<table class="table">
+    <tr>
+        <th>Genre ID</th>
+        <th>Genre Name</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.GenreID</td>
+            <td>@item.Name</td>
+            <td>
+                <a class="btn btn-outline-danger" href="/Genres/Delete/@item.GenreID">Delete</a>
+            </td>
+        </tr>
+    }
+</table>

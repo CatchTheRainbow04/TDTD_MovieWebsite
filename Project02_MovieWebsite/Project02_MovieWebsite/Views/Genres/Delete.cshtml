@@ -1,0 +1,24 @@
+﻿@model Project02_MovieWebsite.Models.Genres
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+}
+
+<h2>Delete</h2>
+
+<form action="/Genres/Delete/@Model.GenreID" method="post">
+    <input type="hidden" name="GenreID" value="@Model.GenreID" />
+    <table class="table table-bordered">
+        <tr>
+            <th>GenreID</th>
+            <td>@Model.GenreID</td>
+        </tr>
+        <tr>
+            <th>Name</th>
+            <td>@Model.Name</td>
+        </tr>
+    </table>
+    <button type="submit" class="btn btn-outline-danger">Delete</button>
+    <a href="/Genres/Index" class="btn btn-outline-info">Cancel</a>
+</form>

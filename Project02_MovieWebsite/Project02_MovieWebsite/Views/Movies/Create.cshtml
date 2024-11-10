@@ -1,0 +1,82 @@
+﻿@model Project02_MovieWebsite.Models.Movies
+@{
+    ViewBag.Title = "Create New Movie";
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+}
+
+<h2>@ViewBag.Title</h2>
+
+<form action="/Movies/Create" method="post">
+    <div class="row">
+        <div class="col-md-6">
+            <label for="Title">Title</label>
+            <input type="text"
+                   class="form-control"
+                   id="Title"
+                   name="Title"
+                   placeholder="Title" />
+        </div>
+        <div class="col-md-6">
+            <label for="GenreID">Genre</label>
+            <select class="form-control" id="GenreID" name="GenreID">
+                <option value="">Select Genre ...</option>
+                @foreach (var gen in @ViewBag.Genres)
+                {
+                    <option value="@gen.GenreID">@gen.Name</option>
+                }
+            </select>
+        </div>
+        <div class="col-md-6">
+            <label for="Description">Description</label>
+            <input type="text"
+                   class="form-control"
+                   id="Description"
+                   name="Description"
+                   placeholder="Description" />
+        </div>
+        <div class="col-md-6">
+            <label for="ReleaseYear">Release Year</label>
+            <input type="date"
+                   class="form-control"
+                   id="ReleaseYear"
+                   name="ReleaseYear"
+                   placeholder="Release Year" />
+        </div>
+        <div class="col-md-6">
+            <label for="Duration">Duration</label>
+            <input type="text"
+                   class="form-control"
+                   id="Duration"
+                   name="Duration"
+                   placeholder="Duration" />
+        </div>
+        <div class="col-md-6">
+            <label for="VideoURL">VideoURL</label>
+            <input type="text"
+                   class="form-control"
+                   id="VideoURL"
+                   name="VideoURL"
+                   placeholder="VideoURL" />
+        </div>
+        <div class="col-md-6">
+            <label for="ThumbnailURL">ThumbnailURL</label>
+            <input type="text"
+                   class="form-control"
+                   id="ThumbnailURL"
+                   name="ThumbnailURL"
+                   placeholder="ThumbnailURL" />
+        </div>
+        <div class="col-md-6">
+            <label for="Rating">Rating</label>
+            <input type="text"
+                   class="form-control"
+                   id="Rating"
+                   name="Rating"
+                   placeholder="Rating" />
+        </div>
+    </div>
+    <div class="mt-3">
+        <a href="/Movies/index" class="btn btn-outline-info">Back to list</a>
+        <button type="submit" class="btn btn-success ms-2">Create</button>
+    </div>
+</form>
