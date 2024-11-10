@@ -1,0 +1,34 @@
+﻿@model Project02_MovieWebsite.ViewModel.LoginVM
+
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+}
+
+<h2 class="w-25 mx-auto">Login</h2>
+
+@using (Html.BeginForm("Login", "Account", FormMethod.Post))
+{
+    <div class="row w-25 mx-auto">
+        <div class="col-md-12">
+            @Html.LabelFor(temp => temp.UserName)
+            @Html.TextBoxFor(temp => temp.UserName, new { placeholder = "Username", @class = "form-control" })
+            @Html.ValidationMessageFor(temp => temp.UserName)
+        </div>
+        <div class="col-md-12">
+            @Html.LabelFor(temp => temp.Password)
+            @Html.PasswordFor(temp => temp.Password, new { placeholder = "Password", @class = "form-control" })
+            @Html.ValidationMessageFor(temp => temp.Password)
+        </div>
+    </div>
+    <div class="row w-25 mx-auto">
+        <div class="col-md-12">
+            @Html.ValidationSummary()
+        </div>
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+            <button type="submit" class="btn btn-outline-success mt-2">Login</button>
+        </div>
+
+    </div>
+}

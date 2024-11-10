@@ -25,6 +25,24 @@
                     <li>@Html.ActionLink("Danh sách phim", "Index", "Movies", new { area = "" }, new { @class = "nav-link" })</li>
                 </ul>
             </div>
+            @if (User.Identity.IsAuthenticated)
+            {
+                <div class="nav-user" style="color:red ; font-weight:bold">
+                    TK : @User.Identity.Name
+                </div>
+                <div class="nav-user" style="color:white ; font-weight:bold">
+                    <a href="/Account/Logout">Logout</a>
+                </div>
+            }
+            else
+            {
+                <div class="nav-user" style="color:white ; font-weight:bold">
+                    <a href="/Account/Register">Register</a>
+                </div>
+                <div class="nav-user" style="color:white ; font-weight:bold">
+                    <a href="/Account/Login">Login</a>
+                </div>
+            }
         </div>
     </nav>
     <div class="container body-content">

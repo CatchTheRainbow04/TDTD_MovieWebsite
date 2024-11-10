@@ -6,3 +6,9 @@
 
 <h2>HomeController</h2>
 
+@if (User.Identity.IsAuthenticated)
+            {
+                <div style="color:red ; font-weight:bold">
+                    Welcome! @User.Identity.Name
+                </div>
+            }
