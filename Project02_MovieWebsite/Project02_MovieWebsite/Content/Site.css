@@ -1,9 +1,13 @@
-﻿.nav-user a {
-    text-decoration:none;
-    color : white;
-    margin:0 10px;
-    transition: 0.25s ease;
+﻿.nav-user{
+    margin:0 5px;
 }
-.nav-user a:hover {
-    color: red;
+
+.nav-user a {
+    text-decoration: none;
+    color: white;
+    transition : 0.25s ease;
 }
+
+    .nav-user a:hover {
+        color: #7E60BF;
+    }

@@ -16,7 +16,7 @@ namespace Project02_MovieWebsite.Controllers
             List<Movies> movies = db.Movies.Where(i => i.Title.Contains(search)).ToList();
             ViewBag.Search = search;
             //Paging
-            int NumOfRecordPerPage = 5;
+            int NumOfRecordPerPage = 10;
             int NumOfPages = Convert.ToInt32(Math.Ceiling(Convert.ToDouble(movies.Count) / Convert.ToDouble(NumOfRecordPerPage)));
             int NumOfRecordToSkip = (page - 1) * NumOfRecordPerPage;
             ViewBag.Page = page;

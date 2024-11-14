@@ -1,0 +1,25 @@
+﻿@model Project02_MovieWebsite.Models.Genres
+
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+}
+
+<h2>MovieID : @Model.GenreID - Before Name : @Model.Name</h2>
+
+<form action="/Genres/Edit/@Model.GenreID" method="post">
+    <input type="hidden" name="GenreID" value="@Model.GenreID" />
+    <div class="row">
+        <div class="col-md-6">
+            <label for="Name">Name</label>
+            <input type="text"
+                   class="form-control"
+                   id="Name"
+                   name="Name"
+                   value="@Model.Name"
+                   placeholder="Name" />
+            <button type="submit" class="btn btn-success mt-3">Edit</button>
+            <a href="/Genres/Index" class="btn btn-info mt-3">Back to list</a>
+        </div>
+    </div>
+</form>

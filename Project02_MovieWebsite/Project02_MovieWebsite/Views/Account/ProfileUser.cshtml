@@ -1,0 +1,20 @@
+﻿@model Project02_MovieWebsite.Identity.AppUser
+
+@{
+    ViewBag.Title = "ProfileUser";
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+}
+
+<h1>Profile</h1>
+<table class="table table-bordered">
+    <tr>
+        <th>Username</th>
+        <td>@Model.UserName</td>
+    </tr>
+    <tr>
+        <th>Email</th>
+        <td>@Model.Email</td>
+    </tr>
+</table>
+<a href="/Movies/Index" class="btn btn-outline-success">Back to list</a>
+<a href="/Account/Logout" class="btn btn-outline-danger">Logout</a>

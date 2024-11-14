@@ -4,11 +4,17 @@
     Layout = "~/Views/Shared/_LayoutPage1.cshtml";
 }
 
-<h2>HomeController</h2>
-
 @if (User.Identity.IsAuthenticated)
-            {
-                <div style="color:red ; font-weight:bold">
-                    Welcome! @User.Identity.Name
-                </div>
-            }
+{
+    <div style="color:red ; font-weight:bold">
+        <h1>
+            Đăng nhập thành công ! @User.Identity.Name ~~~
+        </h1>
+    </div>
+}
+else
+{
+    <div style="text-align:center ; height : 100vh">
+        <h1>Trang chủ</h1>
+    </div>
+}

@@ -7,96 +7,95 @@
 
 @{
     <style>
-        a {
-            text-decoration: none;
-            color: black;
-            transition: 0.25s ease;
+        .movie-item {
+            display: flex;
+            height: 600px;           
+            transition: 0.5s ease;
         }
 
-            a:hover {
-                color: red;
+            .movie-item:hover {
+                transform: scale(1.04);
             }
 
-        th, td {
-            text-align: center;
-            vertical-align: middle;
+        .fixed-img {
+            height: 350px;
+            object-fit: cover;
+        }
+
+        .minimum-title {
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .rating {
+            display: flex;
+            justify-items: center;
+            align-items: center;
         }
     </style>
 }
-
-<h2>@ViewBag.Title</h2>
-
-<form class="d-flex flex-row align-items-center flex-wrap" action="/Movies/Index">
-    <label for="search" class="mx-2 my-1 fw-bolder">Search</label>
-    <input type="search"
-           class="form-control w-auto"
-           id="search"
-           name="search"
-           value="@ViewBag.Search"
-           placeholder="Search" />
-    <button type="submit" class="btn btn-primary mx-2">Go !</button>
-    <a href="/Movies/Create" class="btn btn-outline-dark">Create</a>
-</form>
-
-<table class="table table-bordered my-4">
-    <tr>
-        <th>Title</th>
-        <th>Genre</th>
-        <th>Description</th>
-        <th>Release Year</th>
-        <th>Duration</th>
-        <th>Rating</th>
-    </tr>
+<div class="row row-cols-1 row-cols-md-5 g-4">
     @foreach (var item in Model)
     {
-        <tr>
-            <th>
-                @Html.ActionLink(Html.DisplayFor(i => item.Title).ToString(), "Detail", new { id = item.MovieID, Controller = "Movies" })
-            </th>
-            <td>@item.Genres.Name</td>
-            <td>@item.Description</td>
-            <td>@item.ReleaseYear.Value.ToString("dd/MM/yyyy")</td>
-            <td>@item.Duration</td>
-            <td>@item.Rating</td>
-        </tr>
+        <a href="/Movies/Detail/@item.MovieID" class="text-decoration-none text-dark movie-item">
+            <div class="col" style="box-shadow: 10px 10px 20px black;">
+                <div class="card h-100">
+                    <img src="@item.ThumbnailURL" class="card-img-top fixed-img" />
+                    <div class="card-body">
+                        <h5 class="card-title minimum-title">@item.Title</h5>
+                        <p class="card-text minimum-title">@item.Description</p>
+                        <p class="card-text"><small class="text-muted">Thể loại : @item.Genres.Name</small></p>
+                        <p class="card-text"><small class="text-muted">Năm phát hành : @item.ReleaseYear.Value.ToString("dd/MM/yyyy")</small></p>
+                        <p class="card-text"><small class="text-muted">Thời lượng : @item.Duration</small></p>
+                        <p class="card-text">
+                            <small class="text-muted rating">
+                                Đánh giá : @item.Rating/5 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143ZM233-120l65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Zm247-350Z" /></svg>
+                            </small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </a>
     }
-    <tr>
-        <td colspan="7">
-            @{
-                int PrevPage = ViewBag.Page - 1;
-                if (PrevPage <= 0)
-                {
-                    PrevPage = 1;
-                }
-                int NextPage = ViewBag.Page + 1;
-                if (NextPage > ViewBag.NumOfPages)
-                {
-                    NextPage = ViewBag.NumOfPages;
-                }
+</div>
+
+<div>
+    @{
+        int PrevPage = ViewBag.Page - 1;
+        if (PrevPage <= 0)
+        {
+            PrevPage = 1;
+        }
+        int NextPage = ViewBag.Page + 1;
+        if (NextPage > ViewBag.NumOfPages)
+        {
+            NextPage = ViewBag.NumOfPages;
+        }
+    }
+    <ul class="pagination justify-content-center mt-3">
+        <li class="page-item">
+            <a href="/Movies/Index?page=@PrevPage" class="page-link">Prev</a>
+        </li>
+        @for (int i = 0; i < ViewBag.NumOfPages; i++)
+        {
+            if (i + 1 == ViewBag.Page)
+            {
+                <li class="page-item active">
+                    <a href="/Movies/Index?page=@(i+1)" class="page-link">@(i+1)</a>
+                </li>
             }
-            <ul class="pagination justify-content-center mt-3">
+            else
+            {
                 <li class="page-item">
-                    <a href="/Movies/Index?page=@PrevPage" class="page-link">Prev</a>
+                    <a href="/Movies/Index?page=@(i+1)" class="page-link">@(i+1)</a>
                 </li>
-                @for (int i = 0; i < ViewBag.NumOfPages; i++)
-                {
-                    if (i + 1 == ViewBag.Page)
-                    {
-                        <li class="page-item active">
-                            <a href="/Movies/Index?page=@(i+1)" class="page-link">@(i+1)</a>
-                        </li>
-                    }
-                    else
-                    {
-                        <li class="page-item">
-                            <a href="/Movies/Index?page=@(i+1)" class="page-link">@(i+1)</a>
-                        </li>
-                    }
-                }
-                <li class="page-item">
-                    <a href="/Movies/Index?page=@NextPage" class="page-link">Next</a>
-                </li>
-            </ul>
-        </td>
-    </tr>
-</table>
+            }
+        }
+        <li class="page-item">
+            <a href="/Movies/Index?page=@NextPage" class="page-link">Next</a>
+        </li>
+    </ul>
+</div>

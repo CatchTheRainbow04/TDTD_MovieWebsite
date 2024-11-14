@@ -5,16 +5,8 @@
     Layout = "~/Views/Shared/_LayoutPage1.cshtml";
 }
 
-@*@{
-        <style>
-            th, td {
-                text-align: center;
-                vertical-align: middle;
-            }
-        </style>
-    }*@
 
-<h2>Detail</h2>
+<h2>@Model.Title</h2>
 
 <table class="table table-bordered table-hover">
     <tr>
@@ -42,18 +34,10 @@
         <td>@Model.Duration</td>
     </tr>
     <tr>
-        <th>VideoURL</th>
-        <td>@Model.VideoURL</td>
-    </tr>
-    <tr>
-        <th>ThumbnailURL</th>
-        <td>@Model.ThumbnailURL</td>
-    </tr>
-    <tr>
         <th>Rating</th>
         <td>@Model.Rating</td>
     </tr>
 </table>
-<a href="/Movies/Index" class="btn btn-outline-info">Back to list</a>
+<a class="btn btn-outline-info" href="/Movies/Index">Back to list</a>
 @Html.ActionLink("Edit", "Edit", new { id = Model.MovieID, Controller = "Movies" }, new { @class = "btn btn-outline-warning" })
 @Html.ActionLink("Delete", "Delete", new { id = Model.MovieID, Controller = "Movies" }, new { @class = "btn btn-outline-danger" })

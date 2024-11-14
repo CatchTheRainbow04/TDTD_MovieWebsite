@@ -3,20 +3,24 @@
   "WorkspaceRootPath": "E:\\Project02\\Project02_MovieWebsite\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E9518B41-D5BF-4717-9AF5-6D102F9FE796}|Project02_MovieWebsite\\Project02_MovieWebsite.csproj|e:\\project02\\project02_moviewebsite\\project02_moviewebsite\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E9518B41-D5BF-4717-9AF5-6D102F9FE796}|Project02_MovieWebsite\\Project02_MovieWebsite.csproj|solutionrelative:project02_moviewebsite\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E9518B41-D5BF-4717-9AF5-6D102F9FE796}|Project02_MovieWebsite\\Project02_MovieWebsite.csproj|E:\\Project02\\Project02_MovieWebsite\\project02_moviewebsite\\controllers\\genrescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E9518B41-D5BF-4717-9AF5-6D102F9FE796}|Project02_MovieWebsite\\Project02_MovieWebsite.csproj|solutionrelative:project02_moviewebsite\\controllers\\genrescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9518B41-D5BF-4717-9AF5-6D102F9FE796}|Project02_MovieWebsite\\Project02_MovieWebsite.csproj|e:\\project02\\project02_moviewebsite\\project02_moviewebsite\\views\\movies\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E9518B41-D5BF-4717-9AF5-6D102F9FE796}|Project02_MovieWebsite\\Project02_MovieWebsite.csproj|solutionrelative:project02_moviewebsite\\views\\movies\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9518B41-D5BF-4717-9AF5-6D102F9FE796}|Project02_MovieWebsite\\Project02_MovieWebsite.csproj|E:\\Project02\\Project02_MovieWebsite\\project02_moviewebsite\\controllers\\moviescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E9518B41-D5BF-4717-9AF5-6D102F9FE796}|Project02_MovieWebsite\\Project02_MovieWebsite.csproj|solutionrelative:project02_moviewebsite\\controllers\\moviescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9518B41-D5BF-4717-9AF5-6D102F9FE796}|Project02_MovieWebsite\\Project02_MovieWebsite.csproj|e:\\project02\\project02_moviewebsite\\project02_moviewebsite\\views\\genres\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E9518B41-D5BF-4717-9AF5-6D102F9FE796}|Project02_MovieWebsite\\Project02_MovieWebsite.csproj|solutionrelative:project02_moviewebsite\\views\\genres\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E9518B41-D5BF-4717-9AF5-6D102F9FE796}|Project02_MovieWebsite\\Project02_MovieWebsite.csproj|E:\\Project02\\Project02_MovieWebsite\\project02_moviewebsite\\views\\shared\\_layoutpage1.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{E9518B41-D5BF-4717-9AF5-6D102F9FE796}|Project02_MovieWebsite\\Project02_MovieWebsite.csproj|solutionrelative:project02_moviewebsite\\views\\shared\\_layoutpage1.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E9518B41-D5BF-4717-9AF5-6D102F9FE796}|Project02_MovieWebsite\\Project02_MovieWebsite.csproj|e:\\project02\\project02_moviewebsite\\project02_moviewebsite\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E9518B41-D5BF-4717-9AF5-6D102F9FE796}|Project02_MovieWebsite\\Project02_MovieWebsite.csproj|solutionrelative:project02_moviewebsite\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E9518B41-D5BF-4717-9AF5-6D102F9FE796}|Project02_MovieWebsite\\Project02_MovieWebsite.csproj|e:\\project02\\project02_moviewebsite\\project02_moviewebsite\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E9518B41-D5BF-4717-9AF5-6D102F9FE796}|Project02_MovieWebsite\\Project02_MovieWebsite.csproj|solutionrelative:project02_moviewebsite\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,53 +35,66 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "_LayoutPage1.cshtml",
-              "DocumentMoniker": "E:\\Project02\\Project02_MovieWebsite\\Project02_MovieWebsite\\Views\\Shared\\_LayoutPage1.cshtml",
-              "RelativeDocumentMoniker": "Project02_MovieWebsite\\Views\\Shared\\_LayoutPage1.cshtml",
-              "ToolTip": "E:\\Project02\\Project02_MovieWebsite\\Project02_MovieWebsite\\Views\\Shared\\_LayoutPage1.cshtml",
-              "RelativeToolTip": "Project02_MovieWebsite\\Views\\Shared\\_LayoutPage1.cshtml",
-              "ViewState": "AgIAABMAAAAAAAAAAAAqwCEAAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-10T15:30:16.694Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "E:\\Project02\\Project02_MovieWebsite\\Project02_MovieWebsite\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "Project02_MovieWebsite\\Views\\Home\\Index.cshtml",
-              "ToolTip": "E:\\Project02\\Project02_MovieWebsite\\Project02_MovieWebsite\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "Project02_MovieWebsite\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "DocumentMoniker": "E:\\Project02\\Project02_MovieWebsite\\Project02_MovieWebsite\\Views\\Movies\\Index.cshtml",
+              "RelativeDocumentMoniker": "Project02_MovieWebsite\\Views\\Movies\\Index.cshtml",
+              "ToolTip": "E:\\Project02\\Project02_MovieWebsite\\Project02_MovieWebsite\\Views\\Movies\\Index.cshtml",
+              "RelativeToolTip": "Project02_MovieWebsite\\Views\\Movies\\Index.cshtml",
+              "ViewState": "AgIAADoAAAAAAAAAAAAAAGQAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-10T19:02:51.365Z",
+              "WhenOpened": "2024-11-14T09:10:05.808Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "E:\\Project02\\Project02_MovieWebsite\\Project02_MovieWebsite\\Views\\Account\\Login.cshtml",
-              "RelativeDocumentMoniker": "Project02_MovieWebsite\\Views\\Account\\Login.cshtml",
-              "ToolTip": "E:\\Project02\\Project02_MovieWebsite\\Project02_MovieWebsite\\Views\\Account\\Login.cshtml",
-              "RelativeToolTip": "Project02_MovieWebsite\\Views\\Account\\Login.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAABAAAAAAAAAA==",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\Project02\\Project02_MovieWebsite\\Project02_MovieWebsite\\Views\\Genres\\Index.cshtml",
+              "RelativeDocumentMoniker": "Project02_MovieWebsite\\Views\\Genres\\Index.cshtml",
+              "ToolTip": "E:\\Project02\\Project02_MovieWebsite\\Project02_MovieWebsite\\Views\\Genres\\Index.cshtml",
+              "RelativeToolTip": "Project02_MovieWebsite\\Views\\Genres\\Index.cshtml",
+              "ViewState": "AgIAACkAAAAAAAAAAAAowFAAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-10T18:51:20.663Z",
+              "WhenOpened": "2024-11-14T08:55:41.92Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MoviesController.cs",
+              "DocumentMoniker": "E:\\Project02\\Project02_MovieWebsite\\Project02_MovieWebsite\\Controllers\\MoviesController.cs",
+              "RelativeDocumentMoniker": "Project02_MovieWebsite\\Controllers\\MoviesController.cs",
+              "ToolTip": "E:\\Project02\\Project02_MovieWebsite\\Project02_MovieWebsite\\Controllers\\MoviesController.cs",
+              "RelativeToolTip": "Project02_MovieWebsite\\Controllers\\MoviesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T09:20:50.063Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "E:\\Project02\\Project02_MovieWebsite\\Project02_MovieWebsite\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "Project02_MovieWebsite\\Controllers\\AccountController.cs",
-              "ToolTip": "E:\\Project02\\Project02_MovieWebsite\\Project02_MovieWebsite\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "Project02_MovieWebsite\\Controllers\\AccountController.cs",
-              "ViewState": "AgIAAEMAAAAAAAAAAAAiwFgAAAA1AAAAAAAAAA==",
+              "Title": "GenresController.cs",
+              "DocumentMoniker": "E:\\Project02\\Project02_MovieWebsite\\Project02_MovieWebsite\\Controllers\\GenresController.cs",
+              "RelativeDocumentMoniker": "Project02_MovieWebsite\\Controllers\\GenresController.cs",
+              "ToolTip": "E:\\Project02\\Project02_MovieWebsite\\Project02_MovieWebsite\\Controllers\\GenresController.cs",
+              "RelativeToolTip": "Project02_MovieWebsite\\Controllers\\GenresController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABIAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-10T18:13:30.703Z",
+              "WhenOpened": "2024-11-13T09:02:11.612Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "_LayoutPage1.cshtml",
+              "DocumentMoniker": "E:\\Project02\\Project02_MovieWebsite\\Project02_MovieWebsite\\Views\\Shared\\_LayoutPage1.cshtml",
+              "RelativeDocumentMoniker": "Project02_MovieWebsite\\Views\\Shared\\_LayoutPage1.cshtml",
+              "ToolTip": "E:\\Project02\\Project02_MovieWebsite\\Project02_MovieWebsite\\Views\\Shared\\_LayoutPage1.cshtml",
+              "RelativeToolTip": "Project02_MovieWebsite\\Views\\Shared\\_LayoutPage1.cshtml",
+              "ViewState": "AgIAAFAAAAAAAAAAAAAowF8AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-12T09:16:44.739Z",
               "EditorCaption": ""
             }
           ]

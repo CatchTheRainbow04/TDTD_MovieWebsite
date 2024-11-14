@@ -46,7 +46,6 @@ namespace Project02_MovieWebsite.Controllers
                     authenManager.SignIn(new AuthenticationProperties(), userIdentity);
                 }
                 return RedirectToAction("Index", "Home");
-
             }
             else
             {
@@ -74,7 +73,6 @@ namespace Project02_MovieWebsite.Controllers
 
                 authenManager.SignIn(new AuthenticationProperties(), userIdentity);
                 return RedirectToAction("Index", "Home");
-
             }
             else
             {
@@ -87,6 +85,18 @@ namespace Project02_MovieWebsite.Controllers
             var authenManager = HttpContext.GetOwinContext().Authentication;
             authenManager.SignOut();
             return RedirectToAction("Index", "Home");
+        }
+
+        public ActionResult ProfileUser()
+        {
+            var appDbContext = new AppDbContext();
+            var userStore = new AppUserStore(appDbContext);
+            var userManager = new AppUserManager(userStore);
+
+            var userId = User.Identity.GetUserId();
+            var user =  userManager.FindById(userId);
+
+            return View(user);
         }
     }
 }
